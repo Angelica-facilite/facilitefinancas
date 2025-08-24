@@ -8,17 +8,7 @@ import MethodologySection from "@/components/methodology-section"
 import FooterSection from "@/components/footer-section"
 import SupportSection from "@/components/support-section"
 import Image from "next/image"
-
-export const metadata = {
-  title: "Hyund.AI",
-  description: "Seu consultor",
-  icons: {
-    icon: '/tree.png',           // seu SVG
-    apple: '/tree.png', // opcional: ícone para iOS
-    // opcional: .ico de fallback
-  },
-}
-
+ 
 
 export default function Home() {
   return (
