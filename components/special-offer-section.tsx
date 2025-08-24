@@ -1,34 +1,11 @@
-"use client"
-
-import { useState, useEffect } from "react"
+"use client";
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Clock, Heart, Shield, Users, MessageCircle } from "lucide-react"
+import { CheckCircle, Clock, Heart, Shield, Users } from "lucide-react";
 
 export function SpecialOfferSection() {
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 23,
-    minutes: 45,
-    seconds: 30,
-  })
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 }
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 }
-        } else if (prev.hours > 0) {
-          return { hours: prev.hours - 1, minutes: 59, seconds: 59 }
-        }
-        return prev
-      })
-    }, 1000)
-
-    return () => clearInterval(timer)
-  }, [])
 
   return (
     <section id="price" className="min-h-screen  flex items-center justify-center p-4 relative overflow-hidden">
