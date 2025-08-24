@@ -5,6 +5,7 @@ import MethodologySection from "@/components/methodology-section"
 import FooterSection from "@/components/footer-section"
 import SupportSection from "@/components/support-section"
 import Image from "next/image"
+import { SpecialOfferSection } from "@/components/special-offer-section"
 
 
 export default function Home() {
@@ -56,9 +57,15 @@ export default function Home() {
                 </p>
               </div>
 
-              <Button className="w-full h-16 bg-orange-500 hover:bg-orange-500 text-lg text-white font-bold">
-                QUERO TER LIBERDADE FINANCEIRA
+              <Button
+                asChild
+                className="w-full h-16 bg-orange-500 hover:bg-orange-600 text-lg text-white font-bold rounded-lg transition-all duration-300"
+              >
+                <a href="#price">
+                  QUERO TER LIBERDADE FINANCEIRA
+                </a>
               </Button>
+
             </div>
 
             {/* Vídeo – 60% */}
@@ -75,6 +82,10 @@ export default function Home() {
       <MethodologySection />
 
       <SupportSection />
+
+      <SpecialOfferSection />
+
+
 
       {/* Instructor Section */}
       <InstructorSection />

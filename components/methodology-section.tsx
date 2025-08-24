@@ -150,13 +150,16 @@ export default function MethodologySection() {
 
                 {/* CTA Button */}
                 <div className="text-center">
-                    <Button className=" h-16 md:px-16 bg-orange-500 hover:bg-orange-500 text-lg text-white font-bold">
-                        QUERO TER LIBERDADE FINANCEIRA
+                    <Button asChild className=" h-16 md:px-16 bg-orange-500 hover:bg-orange-500 text-lg text-white font-bold">
+                        <a href="#price">
+                            QUERO TER LIBERDADE FINANCEIRA
+                        </a>
                     </Button>
 
-                    {/* Payment Methods */}
+
 
                 </div>
+
             </div>
         </section>
     )
