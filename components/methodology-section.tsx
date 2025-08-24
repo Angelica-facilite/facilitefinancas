@@ -21,8 +21,8 @@ export default function MethodologySection() {
                                 <Image
                                     src="/01.png?height=320&width=320"
                                     alt="Construir"
-                                    width={320}
-                                    height={320}
+                                    width={1080}
+                                    height={1080}
                                     className="object-cover w-full h-full"
                                 />
                             </div>
@@ -87,8 +87,8 @@ export default function MethodologySection() {
                                 <Image
                                     src="/02.jpg?height=320&width=320"
                                     alt="Respiração ativa"
-                                    width={320}
-                                    height={320}
+                                    width={1080}
+                                    height={1080}
                                     className="object-cover w-full h-full"
                                 />
                             </div>
@@ -112,14 +112,14 @@ export default function MethodologySection() {
                                 <Image
                                     src="/04.jpeg?height=320&width=320"
                                     alt="Incorporar"
-                                    width={320}
-                                    height={320}
+                                    width={1080}
+                                    height={1080}
                                     className="object-cover w-full h-full"
                                 />
                             </div>
                             <div className="absolute -top-4 left-0">
                                 <div className="bg-orange-100 text-xs uppercase md:text-2xl rounded-full px-3 py-1 font-semibold text-orange-500">
-                                Liberdade
+                                    Liberdade
                                 </div>
                             </div>
                             <div className="absolute -bottom-5 -right-5 w-[70px] h-[70px] md:w-[140px] md:h-[140px] bg-orange-500 rounded-full flex items-center justify-center text-white text-3xl font-bold">
@@ -155,7 +155,7 @@ export default function MethodologySection() {
                     </Button>
 
                     {/* Payment Methods */}
-                     
+
                 </div>
             </div>
         </section>

@@ -11,8 +11,8 @@ export default function InstructorSection() {
             <Image
               src="/angelica-2.png?height=320&width=320"
               alt="Incorporar"
-              width={320}
-              height={320}
+              width={1080}
+              height={1080}
               className="object-cover w-full h-full"
             />
           </div>
