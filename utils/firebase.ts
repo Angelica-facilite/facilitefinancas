@@ -22,5 +22,4 @@ export const auth = getAuth(app)
 const db = getFirestore(app)
 const storage = getStorage();
 
-
 export const API = {}
