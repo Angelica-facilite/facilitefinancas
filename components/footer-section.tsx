@@ -1,6 +1,3 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-
 export default function FooterSection() {
   return (
     <footer className="bg-orange-500 text-white pt-4 pb-8">

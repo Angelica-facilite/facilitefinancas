@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 import * as React from "react"
 import { Link as Links, Mail } from "lucide-react";
 
@@ -13,7 +12,6 @@ import {
 } from "@/components/ui/sidebar"
 import { NavMain } from "./nav-main"
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 // This is sample data.
 const data = {

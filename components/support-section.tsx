@@ -1,7 +1,5 @@
 'use client'
-import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
-import { useSidebar } from "./ui/sidebar"
 import Image from "next/image"
 
 export default function SupportSection() {

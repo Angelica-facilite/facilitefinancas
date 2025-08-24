@@ -1,7 +1,7 @@
 "use client"
 
- 
-import { SidebarGroup, SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar } from "@/components/ui/sidebar";
+
+import { SidebarGroup, SidebarMenu, SidebarMenuButton, SidebarMenuItem } from "@/components/ui/sidebar";
 import { cn } from "@/lib/utils"
 
 
@@ -18,22 +18,21 @@ export function NavMain({
     icon: LucideIcon
   }[]
 }) {
-  const { isMobile } = useSidebar()
-  const path = usePathname().replace('/','')
+  const path = usePathname().replace('/', '')
   return (
-    <SidebarGroup  > 
+    <SidebarGroup  >
       <SidebarMenu>
         {projects.map((item) => (
           <SidebarMenuItem key={item.name} >
-            <SidebarMenuButton asChild className={cn("hover:bg-[#fc6103] hover:text-white",item.url === path ?'bg-[#fc6103]':"")}>
+            <SidebarMenuButton asChild className={cn("hover:bg-[#fc6103] hover:text-white", item.url === path ? 'bg-[#fc6103]' : "")}>
               <a href={item.url}>
                 {item.icon && <item.icon />}
-                <span>{item.name}</span> 
+                <span>{item.name}</span>
               </a>
-            </SidebarMenuButton>        
+            </SidebarMenuButton>
           </SidebarMenuItem>
         ))}
-        
+
       </SidebarMenu>
     </SidebarGroup>
   )

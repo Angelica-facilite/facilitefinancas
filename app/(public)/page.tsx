@@ -1,14 +1,11 @@
-import ClassDetails from "@/components/class-details"
 import InstructorSection from "@/components/instructor-section"
-import BonusSection from "@/components/bonus-section"
-import FinalCTA from "@/components/final-cta"
 import { Button } from "@/components/ui/button"
 import VideoPlayer from "@/components/video-player"
 import MethodologySection from "@/components/methodology-section"
 import FooterSection from "@/components/footer-section"
 import SupportSection from "@/components/support-section"
 import Image from "next/image"
- 
+
 
 export default function Home() {
   return (

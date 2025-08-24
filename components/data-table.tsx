@@ -13,7 +13,7 @@ import {
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { ColumnDef, TableState } from "@tanstack/react-table";
+import { ColumnDef } from "@tanstack/react-table";
 import {
   DndContext,
   closestCenter,
@@ -34,9 +34,9 @@ import { CSS } from "@dnd-kit/utilities";
 import { GripVertical } from "lucide-react";
 
 // Interface correta para armazenar actions na meta
-interface TableMeta<TData> {
-  actions: Record<string, (item: TData) => void>;
-}
+// interface TableMeta<TData> {
+//   actions: Record<string, (item: TData) => void>;
+// }
 
 interface DataTableProps<TData> {
   data: TData[];
@@ -65,13 +65,13 @@ function DraggableTableRow({ id, children }: { id: string; children: React.React
   );
 }
 
-export function DataTable<TData extends { id: string }>({ 
-  data: initialData, 
-  columns, 
-  actions = {}, 
-  searchKey, 
-  actionComponent, 
-  draggable = false ,
+export function DataTable<TData extends { id: string }>({
+  data: initialData,
+  columns,
+  actions = {},
+  searchKey,
+  actionComponent,
+  draggable = false,
   onReorder
 }: DataTableProps<TData>) {
   const [data, setData] = React.useState(initialData);
